@@ -71,6 +71,21 @@ public class securityConfig extends WebSecurityConfigurerAdapter
 
                 //Register Authentication
 
+                /*//Student
+                .antMatchers(HttpMethod.POST, "/Student_Management-ADP3-Group14/school/save_student").hasRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/Student_Management-ADP3-Group14/school/update_student").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/Student_Management-ADP3-Group14/school/readStudent/").hasRole("USER")
+                .antMatchers(HttpMethod.DELETE, "/Student_Management-ADP3-Group14/school/deleteStudent/").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/Student_Management-ADP3-Group14/school/readAllStudents").hasRole("USER")
+
+                //Subject
+                .antMatchers(HttpMethod.POST, "/Student_Management-ADP3-Group14/school/save_subject").hasRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/Student_Management-ADP3-Group14/school/update_subject").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/Student_Management-ADP3-Group14/school/readSubject/").hasRole("USER")
+                .antMatchers(HttpMethod.DELETE, "/Student_Management-ADP3-Group14/school/deleteSubject/").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/Student_Management-ADP3-Group14/school/readAllSubjects").hasRole("USER")
+*/
+
                 .and()
                 .formLogin().disable()
                 .httpBasic();
